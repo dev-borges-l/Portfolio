@@ -1,190 +1,143 @@
-.bd {
-    background-color: rgb(24, 203, 203);
+/* Estilos responsivos para telas maiores que 2560px */
+@media screen and (min-width: 2560px) {
+    body {
+        font-size: 2.2rem;
+    }
+    section#bem-vindo h1 {
+        font-size: 3.2rem;
+    }
+    section#bem-vindo p {
+        font-size: 26px;
+    }
+    section#imagens > a {
+        padding: 4rem 5rem;
+        font-size: 3rem;
+    }
+    .titulos-Artes {
+        grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+    }
 }
 
-#bg-navbar {
-    background-color: rgb(12, 28, 58);
+/* Estilos responsivos para telas menores que 240px */
+@media screen and (max-width: 240px) {
+    header {
+        padding-right: 0;
+    }
+    a {
+        padding: 0.5rem 1rem;
+    }
+    section#bem-vindo h1 {
+        font-size: 1.5rem;
+    }
 }
 
-#menu a {
-    color: aquamarine;
+/* Estilos responsivos para telas maiores que 1920px */
+@media screen and (min-width: 1920px) {
+    section#bem-vindo h1 {
+        font-size: 2.5rem;
+    }
+    section#bem-vindo p {
+        font-size: 24px;
+    }
 }
 
-#menu a:hover {
-    color: rgb(22, 73, 127);
+/* Estilos responsivos para telas menores que 280px */
+@media screen and (max-width: 280px) {
+    a {
+        padding: 1rem 2rem;
+    }
 }
 
-*::before,
-*::after {
-    /* Indica que o tamanho agora levará em conta até a borda - ou seja, o width será a soma do conteúdo com a borda e o padding */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Estilos responsivos para telas maiores que 1600px */
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 2rem;
+    }
+    section#imagens > a {
+        padding: 3rem 4rem;
+        font-size: 3rem;
+    }
+    .titulos-Artes {
+        grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    }
 }
 
-:root {
-    /* Variáveis em CSS */
-    --cor-primaria: rgb(23, 188, 194);
-    --cor-texto-primaria: rgb(16, 65, 172);
+/* Estilos responsivos para telas menores que 320px */
+@media screen and (max-width: 320px) {
+    a {
+        padding: 1rem 1.5rem;
+    }
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+/* Estilos responsivos para telas menores que 640px */
+@media screen and (max-width: 640px) {
+    header {
+        padding-right: 1rem;
+    }
+    a {
+        padding: 1.5rem 2rem;
+    }
 }
 
-html {
-    font-size: 62.5%;
-    font-family: 'Puppins', sans-serif;
-    scroll-behavior: smooth;
-    color: blanchedalmond;
+/* Estilos responsivos para telas maiores que 1440px */
+@media screen and (min-width: 1440px) {
+    section#imagens > a {
+        padding: 2rem 3.5rem;
+        font-size: 2.8rem;
+    }
+    .titulos-Artes {
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    }
 }
 
-body {
-    min-height: 100vh;
-    width: 100%;
-    font-size: 1.8rem;
-    color: var(--cor-primaria);
+/* Estilos responsivos para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    header {
+        justify-content: center;
+        padding-right: 0;
+    }
+    nav > ul {
+        flex-direction: column;
+    }
+    a {
+        padding: 1rem 2rem;
+    }
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--cor-texto-primaria);
-    padding-right: 2rem;
-    position: sticky;
-    overflow: hidden;
+/* Estilos responsivos para telas maiores que 1200px */
+@media screen and (min-width: 1200px) {
+    section#imagens > a {
+        padding: 1.5rem 3rem;
+        font-size: 2.5rem;
+    }
+    .titulos-Artes {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
 }
 
-header ul {
-    list-style: none;
+/* Estilos responsivos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+    section#bem-vindo {
+        width: 100%;
+        margin-top: 0;
+    }
+    section#bem-vindo h1 {
+        font-size: 1.8rem;
+    }
+    section#bem-vindo p {
+        font-size: 20px;
+    }
 }
 
-nav > ul {
-    display: flex;
-    /* Coloca espaço entre os elementos */
-    justify-content: space-between;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 2.2rem;
-    display: inline-block;
-    padding: 2rem 2.5rem;
-    /* Transição de cor de fundo, de 0.2s linear */
-    transition: background-color 0.2s linear;
-}
-
-header a:hover {
-    background-color: rgb(119, 119, 119);
-}
-
-section#bem-vindo {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    min-height: calc(100vh - 10px);
-    margin: auto;
-    margin-top: 50px;
-    background: url(""); /* Adicione a URL da imagem de fundo aqui */
-    background-size: cover;
-    background-position: center;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    line-height: 120%;
-    background-color: rgb(12, 28, 58);
-}
-
-section#bem-vindo h1 {
-    font-size: 2rem;
-    color: aqua;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin-top: 5%;
-}
-
-section#bem-vindo p {
-    margin-top: 10%;
-    text-align: center;
-    margin-left: 10%;
-    font-size: 25px;
-    width: 80%;
-    height: 100%;
-    font-style: italic;
-    color: var(--cor-texto-primaria);
-}
-
-section#bem-vindo img {
-    width: 100%;
-    height: auto;
-}
-
-section#imagens {
-    padding: 10rem 2rem 5rem;
-    background-color: rgb(12, 28, 58);
-    text-align: center;
-    color: aquamarine;
-}
-
-/* Estilizado a tag a */
-section#imagens > a {
-    display: inline-block;
-    padding: 1rem 2rem;
-    margin: 4rem auto;
-    background-color: aqua;
-    font-size: 2rem;
-    transform: all 0.2s linear; /* Corrija para "transform: all 0.2s linear" */
-}
-
-section#imagens > a:hover {
-    background-color: aliceblue;
-}
-
-.titulos-Artes {
-    /* Define os elementos em colunas (grade) */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); /* Corrija para "1fr" */
-    max-width: 136rem; /* Corrija para "136rem" */
-    width: 100%;
-    margin: auto;
-    grid-column-gap: 6rem;
-}
-
-.titulos-Artes a {
-    padding: 0; /* Corrija para "padding: 0;" */
-    display: block;
-}
-
-figure {
-    text-align: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-figcaption {
-    padding: 1.5rem;
-    margin-top: -1rem;
-    display: flex;
-    justify-content: center;
-    border-radius: 0 0 1rem 1rem;
-    background-color: rgb(99, 99, 99);
-    height: calc(100% - (100% - 8rem));
-}
-
-.titulos-Artes a:hover figcaption {
-    background-color: rgb(255, 255, 255);
-}
-
-#dropdown-menu a:hover {
-    color: black;
-}
-
-section#Fotos {
-    background-color: rgb(12, 28, 58);
-    color: aqua;
+/* Estilos responsivos para telas menores que 320px */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 1.2rem;
+    }
+    section#bem-vindo h1 {
+        font-size: 1.6rem;
+    }
 }
