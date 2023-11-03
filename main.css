@@ -5,6 +5,10 @@
     background-color: rgb(12, 28, 58);
 }
 
+.navbar-toggler{
+    background-color: aqua !important;
+}
+
 #menu a{
     color: aquamarine;
    
