@@ -1,3 +1,188 @@
+.bd{
+    background-color: rgb(24, 203, 203);
+}
+#bg-navbar{
+    background-color: rgb(12, 28, 58);
+}
+
+#menu a{
+    color: aquamarine;
+   
+}
+#menu a:hover{
+    color: rgb(22, 73, 127);
+}
+*::before
+*::after{
+    /*indica que o tamanho agora levará em conta até a borda -- ou seja, o width será a soma do conteúdo com a borda e o padding*/
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    /*Variáveis em CSS*/
+    --cor-primaria: rgb(23, 188, 194);
+    --cor-texto-primaria: rgb(16, 65, 172);
+
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+html{
+    font-size: 62,5%;
+    font-family: 'Puppins', sans-serif;
+    scroll-behavior: smooth;
+    color: blanchedalmond;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--cor-texto-primaria);
+    padding-right: 2rem;
+    position: sticky;
+    overflow: hidden;
+}
+header ul{
+    list-style: none;
+}
+nav > ul{
+    display: flex;
+    /*coloca espaço entre os elementos*/
+    justify-content: space-between;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: inline-block;
+    padding: 2rem 2.5rem;
+    /*Transição de cor de fundo, de 0.2s linear*/
+    transition: background-color 0.2s linear;
+}
+header a:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+section#bem-vindo{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    min-height:calc(100hv - 10px);
+    margin: auto;
+    margin-top: 50px;
+    background:url("") ;
+    background-size: cover;
+    background-position: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 120%;
+    background-color: rgb(12, 28, 58);
+}
+section#bem-vindo h1{
+    font-size: 2rem;
+    color: aqua;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+section#bem-vindo p{
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 10%;
+    font-size: 25px;
+    width: 80%;
+    height: 100%;
+    font-style: italic;
+    color: var(--cor-texto-primaria);
+}
+section#bem-vindo img{
+    width: 100%;
+    height: auto;
+}
+
+section#imagens {
+    padding: 10rem 2rem 5rem;
+    background-color: rgb(12, 28, 58);
+    text-align: center;
+    color: aquamarine;
+}
+/*Estilizado a tag a*/
+section#imagens > a {
+    display: inline-block;
+    padding: 1rem 2rem; 
+    margin: 4rem auto;
+    background-color: aqua;
+    font-size: 2rem;
+    transform: all 0,2s linear;
+}
+section#imagens > a:houver {
+    background-color: aliceblue;
+}
+.titulos-Artes {
+    /*Define os elementos em colunas (grade)*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, lfr));
+    max-width: 136 rem;
+    width: 100%;
+    margin: auto;
+    grid-column-gap: 6rem;
+
+}
+.titulos-Artes a {
+    padding: 0%;
+    display: block;
+}
+figure {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+figcaption {
+    padding: 1.5rem;
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+    background-color: rgb(99, 99, 99);
+    height: calc(100% - (100% - 8rem));
+
+}
+.titulos-Artes a:hover figcaption {
+    background-color: rgb(255, 255, 255);
+}
+#dropdown-menu a:hover{
+    color: black;
+}
+section#Fotos{
+    background-color:rgb(12, 28, 58);
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
 /* Estilos responsivos para telas maiores que 2560px */
 @media screen and (min-width: 2560px) {
     body {
